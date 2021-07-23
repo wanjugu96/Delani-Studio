@@ -1,0 +1,16 @@
+    .header {
+        height: 100vh;
+        background-image: url(/IP3/assets/backgrounds/h_img.jpg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        color: white;
+        padding-top: 17.5%;
+    }
+    
+    .about {
+        margin-top: 60px;
+        text-align: center;
+        font-size: 16px;
+    }
