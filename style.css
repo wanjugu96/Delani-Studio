@@ -1,61 +1,116 @@
-    .container {
-        align-items: center;
-    }
-    
-    .header {
-        height: 100vh;
-        background-image: url(/IP3/assets/backgrounds/h_img.jpg);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-size: cover;
-        color: white;
-        padding-top: 17.5%;
-    }
-    
-    .about {
-        margin: 80px;
-        text-align: center;
-        font-size: 16px;
-    }
-    
-    .services {
-        height: 50vh;
-        background-image: url(/IP3/assets/backgrounds/s_image.jpg);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-size: cover;
-        color: white;
-        padding-top: 120px;
-        padding-bottom: 10px;
-    }
-    
-    .col-md-4 {
-        float: right;
-        align-items: center;
-    }
-    
-    .col-md-3 img {
-        width: 250px;
-        margin: 30px;
-    }
-    
-    .row {
-        align-items: center;
-    }
-    
-    .contact {
-        background-image: url(/IP3/assets/backgrounds/c_image.jpg);
-        align-items: center;
-    }
-    
-    footer {
-        align-content: center;
-    }
-    
-    .words,
-    .words1,
-    .words2 {
-        display: none;
-    }
+        .container {
+            align-items: center;
+        }
+        
+        .header {
+            height: 100vh;
+            background-image: url(/IP3/assets/backgrounds/h_img.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+            color: white;
+            padding-top: 17.5%;
+        }
+        
+        .about {
+            margin: 80px;
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        .services {
+            height: 50vh;
+            background-image: url(/IP3/assets/backgrounds/s_image.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+            color: white;
+            padding-top: 120px;
+            padding-bottom: 10px;
+        }
+        
+        .col-md-4 {
+            float: right;
+            align-items: center;
+        }
+        
+        .col-md-3 {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        
+        .col-md-3 img {
+            width: 250px;
+            margin: 30px;
+        }
+        
+        ////////// 
+        .project {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .col-md-3:hover .project {
+            opacity: 0.3;
+        }
+        
+        .col-md-3:hover .middle {
+            opacity: 1;
+        }
+        
+        .text {
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+        
+        .row {
+            align-items: center;
+        }
+        
+        .contact {
+            background-image: url(/IP3/assets/backgrounds/c_image.jpg);
+            align-items: center;
+        }
+        
+        footer {
+            align-content: center;
+        }
+        
+        .words,
+        .words1,
+        .words2 {
+            display: none;
+        }
+        
+        .contact {
+            padding: 20px;
+            color: white;
+            padding-top: 50px;
+            padding-bottom: 200px;
+        }
+        
+        .contact input {
+            border: 1.3px solid white;
+            background-color: inherit;
+            color: white;
+        }
