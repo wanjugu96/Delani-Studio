@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
@@ -148,24 +149,30 @@
 
             <div class="contact">
                 <h2> CONTACT US</h2>
-                <input type="text" value="Name.." style="width: 320px;">
-                <input type="text" value="Email" style="width: 320px;">
-                <br></br>
-                <input type=" text " value="Your message here... " style="width: 700px; height:250px; ">
+                <form name="message" action="" method="POST">
+                    <input type="text" name="name" value="Name.." id="nameid" style="width: 320px;">
+                    <input type="text" name="email" value="Email" id='emailid' style="width: 320px;">
+                    <br></br>
+                    <input type=" text " name="message" value=" Your message here... " id="messageid " style="width: 700px; height:250px; ">
+                    <br></br>
+                    <input type="button " id="sends" class="btn btn-primary " value="send" onclick="send()" />
+
+                </form>
+
+            </div>
         </center>
-        </div>
         <br></br>
         <footer>
             <center>
-                <img src="IP3\assets\social_icons\dribble.png" alt="behance">
-                <img src="IP3\assets\social_icons\facebook.png" alt="behance">
-                <img src="IP3\assets\social_icons\flickr.png" alt="behance">
-                <img src="IP3\assets\social_icons\g_plus.png" alt="behance">
-                <img src="IP3\assets\social_icons\pinterest.png" alt="behance">
-                <img src="IP3\assets\social_icons\skype.png" alt="behance">
-                <img src="IP3\assets\social_icons\stumble_upon.png" alt="behance">
-                <img src="IP3\assets\social_icons\twitter.png" alt="behance">
-                <img src="IP3\assets\social_icons\you_tube.png" alt="behance">
+                <img src="IP3\assets\social_icons\dribble.png " alt="behance ">
+                <img src="IP3\assets\social_icons\facebook.png " alt="behance ">
+                <img src="IP3\assets\social_icons\flickr.png " alt="behance ">
+                <img src="IP3\assets\social_icons\g_plus.png " alt="behance ">
+                <img src="IP3\assets\social_icons\pinterest.png " alt="behance ">
+                <img src="IP3\assets\social_icons\skype.png " alt="behance ">
+                <img src="IP3\assets\social_icons\stumble_upon.png " alt="behance ">
+                <img src="IP3\assets\social_icons\twitter.png " alt="behance ">
+                <img src="IP3\assets\social_icons\you_tube.png " alt="behance ">
                 <p>DELANI STUDIO</p>
                 <P>2019</P>
             </center>
